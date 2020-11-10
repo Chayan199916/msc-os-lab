@@ -1,0 +1,2 @@
+1. append using lseek
+2. inserting chars in between a file. 
