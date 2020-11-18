@@ -1,0 +1,7 @@
+Before calling fork() system call
+Entered in child process. pid : 5264 ppid : 5263
+elephant
+dog
+cat
+deer
+Entered in parent process. pid : 5263 ppid : 2394 child-process id : 5264

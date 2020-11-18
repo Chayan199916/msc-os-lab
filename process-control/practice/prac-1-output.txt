@@ -1,0 +1,6 @@
+Before fork
+CHILD-- PID:  2547 PPID:  2546
+Both processes continue from here
+Before fork
+PARENT-- PID:  2546 PPID:  2394, CHILD PID:  2547
+Both processes continue from here
