@@ -1,4 +1,0 @@
-1. echoing args sent through cmd line.
-2. creating child process and make it execute previous prog
-3. creating a process that will create a file accepting chars from kboard and then will create
-another process that will display content of the file created by previous child process
