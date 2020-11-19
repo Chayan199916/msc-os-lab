@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		
 		write(STDOUT_FILENO, &errno, sizeof(errno));
 		perror("File Open Error");
-		exit(1);
+		exit(errno);
 
 	}
 	
