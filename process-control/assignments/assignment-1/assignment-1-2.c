@@ -7,7 +7,6 @@
 int main(){
 
     pid_t pid;
-    int process_img_chng_check;
     char *args[] = {"elephant", "dog", "cat", "deer", NULL};
 
     printf("Before calling fork() system call\n");
@@ -17,13 +16,9 @@ int main(){
     if(pid == 0){
 
         printf("Entered in child process. pid : %d ppid : %d\n", getpid(), getppid());
-        process_img_chng_check = execv("./assignment-1-1", args);
-        if(process_img_chng_check == -1){
-
-            perror("Failed to replace process image\n");
-            exit(errno);
-
-        }
+        execv("./assignment-1-1", args);
+        perror("Failed to replace process image\n");
+        _exit(errno);
 
     }
     else if(pid == -1){
