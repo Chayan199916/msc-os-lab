@@ -1,0 +1,12 @@
+Entered in child process 1. pid : 2825 ppid : 2824
+Enter the content of the file:
+hello world.
+bye worldq
+File Creation Done.
+Returned in parent process. pid : 2824 ppid : 1814 child-process 1 id : 2825
+Entered in child process 2. pid : 2842 ppid : 2824
+Data reading starts...
+hello world.
+bye world
+Data reading done.
+Returned in parent process. pid : 2824 ppid : 1814 child-process id : 2842
