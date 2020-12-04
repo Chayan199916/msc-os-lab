@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<unistd.h>
-#include<sys/types.h>
+//#include<sys/types.h>
 #include<stdlib.h>
 #include<sys/errno.h>
 #include<sys/wait.h>
