@@ -21,6 +21,9 @@ int main(int argc, char *argv[]){
         while (read(STDIN_FILENO, &read_byte, sizeof(read_byte)) != SIGTSTP)
         {
             
+            if (read_byte == 'q')
+                break;
+            
             write(fd, &read_byte, sizeof(read_byte));
 
         }
@@ -35,3 +38,6 @@ int main(int argc, char *argv[]){
     }
     
 }
+/*
+after giving inputs, press 'q' then enter.
+*/

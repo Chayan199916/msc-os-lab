@@ -55,5 +55,4 @@ int main(int argc, char *argv[]){
         perror("Fork Error in child 1 creation");
         exit(errno);
     }
-    
 }
