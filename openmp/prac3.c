@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 
     omp_set_dynamic(0);
     m = omp_get_num_procs();
-    omp_set_num_threads(m);
+    omp_set_num_threads(6);
 
     #pragma omp parallel for shared(A) private (i)
     for(i = 0; i < 10; i++)

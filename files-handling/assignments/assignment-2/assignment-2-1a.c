@@ -18,12 +18,9 @@ int main(int argc, char *argv[]){
     {
 
         lseek(fd, 0, SEEK_END);
-        while (read(STDIN_FILENO, &read_byte, sizeof(read_byte)) != SIGTSTP)
+        while (read(STDIN_FILENO, &read_byte, sizeof(read_byte)) > 0)
         {
-            
-            if (read_byte == 'q')
-                break;
-            
+          
             write(fd, &read_byte, sizeof(read_byte));
 
         }

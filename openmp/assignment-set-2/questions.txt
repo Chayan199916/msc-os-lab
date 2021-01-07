@@ -1,0 +1,7 @@
+Assignment
+------------
+1.Write an OpenMP program to multiply two matrices.
+2.Write an OpenMP program to find the dot product, cross
+product of two vectors.
+3.Write an OpenMP program to find the determinant of a
+3x3 matrix.
